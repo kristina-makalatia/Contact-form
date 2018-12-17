@@ -1,6 +1,7 @@
 /*Base classes*/
 .container{
-	width:1170px;
+	max-width:1170px;
+	width:100%;
 	margin:0 auto;
 }
 .flex{
@@ -174,4 +175,65 @@ input::placeholder{
 	padding:10px 45px;
 	color:#fff;
 	font-size:25px;
+}
+.fa-bars:hover{
+    color: red;
+}
+.burger-icon{
+	display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+	.video-wraper{
+		flex-direction: column;
+		align-items: center;
+		/*flex-wrap: wrap;*/
+	}
+	.video:nth-child(2){
+         margin-top:25px;
+	}
+	.container{
+		padding:0 20px;
+	}
+	.big-box{
+		/*flex-direction: column;*/
+		flex-wrap: wrap;
+	}
+	.small-box{
+		margin-right:0;
+	}
+	.small-box:last-child{
+		margin-top: 30px;
+	}
+	.burger-icon{
+		display: block;
+    }
+    .navigation{
+    	display: none;
+    }
+    .form-wrapper{
+    	flex-direction: column;
+    }
+    .form-class{
+    	align-items: center;
+    }
+
+}
+
+@media(max-width: 700px){
+	.text-box{
+		color:red;
+		font-size:35px;
+	}
+}
+
+@media(max-width: 500px){
+	/*.social-ul{
+		display: none;
+	}*/
+
+	.social-li:not(.active){
+		display: none;
+	}
+
 }
